@@ -6,7 +6,7 @@
   db_name=$3
   psql_user=$4
   psql_password=$5
-
+  export PGPASSWORD=$psql_password
   # checking arguments
   if [ $# -ne  5 ]; then
     echo "Please check you arguments"
