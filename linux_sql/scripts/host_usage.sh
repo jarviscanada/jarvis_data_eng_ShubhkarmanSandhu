@@ -34,14 +34,6 @@
 
     timestamp=$(date +"%Y-%m-%d %T")
 
-    echo $memory_free
-    echo $cpu_idle
-    echo $cpu_kernel
-    echo $disk_io
-    echo $disk_available
-    echo $host_id
-    echo $timestamp
-
     #special variable for insert statement
     insert_stmt="INSERT INTO host_usage(timestamp,host_id,memory_free,cpu_idle,cpu_kernel,disk_io,disk_available) VALUES('$timestamp','$host_id','$memory_free','$cpu_idle','$cpu_kernel','$disk_io','$disk_available');"
 
