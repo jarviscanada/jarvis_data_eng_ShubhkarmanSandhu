@@ -26,7 +26,7 @@ Technologies and softwares used throughout this process include: Docker, Git, Po
 5. Implement bash scripts to extract hardware information and usage and store them in the database.
 6. 3 Special PSQl queries code to organize data and to detect host failure
 ## Architecture
-![](/home/centos/dev/jarvis_data_eng_Shubhkarman/linux_sql/assets/sql_linux.drawio.png){assets/sql_linux.drawio.png}
+![](assets/sql_linux.drawio.png){assets/sql_linux.drawio.png}
 
 ## Scripts
 
