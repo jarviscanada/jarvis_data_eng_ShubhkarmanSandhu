@@ -7,16 +7,16 @@ Technologies and softwares used throughout this process include: Docker, Git, Po
 
 # Quick Start
 
-- Start a psql instance using psql_docker.sh
-  `./scripts/psql_docker.sh start <username> <password>`
-- Create tables using ddl.sql
-  `psql -h localhost -U postgres -d host_agent -f sql/ddl.sql`
-- Insert hardware specs data into the DB using host_info.sh
-  `./scripts/host_info.sh psql_port db_name psql_user psql_password`
-- Insert hardware usage data into the DB using host_usage.sh
-  `./scripts/host_usage.sh psql_port db_name psql_user psql_password`
-- Crontab setup
-  `* * * * * bash /home/centos/dev/jarvis_data_eng_Shubhkarman/ linux_sql/scripts/host_usage.sh "localhost" 5432 "host_agent" "postgres" "password" > /tmp/psl_docker.log`
+- Start a psql instance using psql_docker.sh <br/>
+  `./scripts/psql_docker.sh start <username> <password>` <br/>
+- Create tables using ddl.sql <br/>
+  `psql -h localhost -U postgres -d host_agent -f sql/ddl.sql` <br/>
+- Insert hardware specs data into the DB using host_info.sh <br/>
+  `./scripts/host_info.sh psql_port db_name psql_user psql_password` <br/>
+- Insert hardware usage data into the DB using host_usage.sh <br/>
+  `./scripts/host_usage.sh psql_port db_name psql_user psql_password` <br/>
+- Crontab setup <br/>
+  `* * * * * bash /home/centos/dev/jarvis_data_eng_Shubhkarman/ linux_sql/scripts/host_usage.sh "localhost" 5432 "host_agent" "postgres" "password" > /tmp/psl_docker.log` <br/>
 
 # Implemenation
 1. We set up the required environment and directories  for the project
@@ -31,48 +31,48 @@ Technologies and softwares used throughout this process include: Docker, Git, Po
 ## Scripts
 
 ### psql_docker.sh
-- Discription
-  Creation of PSQL instance by creating a container of postgres:9.6-alpine image using bash. The script must pass through the required parameters for proper functionality
-- Usage
-  The script below will create the docker container which consists of the Postgres database we will be using throughout the project .
-  [db_username]:- Username for database
-  [db_password]:- Password for  database
-  `./scripts/psql_docker.sh create [db_username] [db_password]`
-  The script below will start the container when executed
-  `./scripts/psql_docker.sh start`
-  The scripts below will stop the container when executed.
-  `./scripts/psql_docker.sh stop`
+- Discription <br/>
+  Creation of PSQL instance by creating a container of postgres:9.6-alpine image using bash. The script must pass through the required parameters for proper functionality <br/>
+- Usage <br/>
+  The script below will create the docker container which consists of the Postgres database we will be using throughout the project . <br/>
+  [db_username]:- Username for database <br/>
+  [db_password]:- Password for  database <br/>
+  `./scripts/psql_docker.sh create [db_username] [db_password]` <br/>
+  The script below will start the container when executed <br/>
+  `./scripts/psql_docker.sh start` <br/>
+  The scripts below will stop the container when executed. <br/>
+  `./scripts/psql_docker.sh stop` <br/>
 ### host_info.sh
-- Discription
-  This bash script will  run once on each node to collect hardware information using various linux usage commands and then transfer the data into database.This script needs to run before host_usage.sh so that node is registered in database.
-- Usage
-  The script below will gather the extracted hardware specifications, process and store the data in the assigned table in the database.
-  psql_host :- Host name
-  psql_port :- Port number for server instance (mannualy code here "5432")
-  db_name :- Username for database
-  psql_user :- Instance username
-  psql_password:- Instance password
-  Command:-`./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password`
-  Example:-`./scripts/host_info.sh "localhost" 5432 "host_agent" "postgres" "password"`
+- Discription <br/>
+  This bash script will  run once on each node to collect hardware information using various linux usage commands and then transfer the data into database.This script needs to run before host_usage.sh so that node is registered in database. <br/>
+- Usage <br/>
+  The script below will gather the extracted hardware specifications, process and store the data in the assigned table in the database. <br/>
+  psql_host :- Host name <br/>
+  psql_port :- Port number for server instance (mannualy code here "5432") <br/>
+  db_name :- Username for database <br/>
+  psql_user :- Instance username <br/>
+  psql_password:- Instance password <br/>
+  Command:-`./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password` <br/>
+  Example:-`./scripts/host_info.sh "localhost" 5432 "host_agent" "postgres" "password"` <br/>
 ### host_usage.sh
-- Discription
-  This bash script will extract resource usage information and store the data in the assigned table in the database and this script will execute, extract immediate data, and store the data on a minute-by-minute basis.
-- Usage
-  This bash script will be executed after host_info.sh and then with the help of crontab run every minute and gather information.
-  psql_host :- Host name
-  psql_port :- Port number for server instance (mannualy code here "5432")
-  db_name :- Username for database
-  psql_user :- Instance username
-  psql_password:- Instance password
-  Command:-`./scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password`
-  Example:-`./scripts/host_usage.sh "localhost" 5432 "host_agent" "postgres" "password"`
+- Discription <br/>
+  This bash script will extract resource usage information and store the data in the assigned table in the database and this script will execute, extract immediate data, and store the data on a minute-by-minute basis. <br/>
+- Usage <br/>
+  This bash script will be executed after host_info.sh and then with the help of crontab run every minute and gather information.<br/>
+  psql_host :- Host name <br/>
+  psql_port :- Port number for server instance (mannualy code here "5432") <br/>
+  db_name :- Username for database <br/>
+  psql_user :- Instance username <br/>
+  psql_password:- Instance password <br/>
+  Command:-`./scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password` <br/>
+  Example:-`./scripts/host_usage.sh "localhost" 5432 "host_agent" "postgres" "password"` <br/>
 
 ### crontab
-- Discription
+- Discription <br/>
   This bash script will help host_usage.sh to run minute-by-minute basis and perform its task
-- Usage
-  Open crontab editor:- `crontab -e`
-  Add this to your crontab :-`* * * * * bash /home/centos/dev/jarvis_data_eng_Shubhkarman/ linux_sql/scripts/host_usage.sh "localhost" 5432 "host_agent" "postgres" "password" > /tmp/psl_docker.log`
+- Usage <br/>
+  Open crontab editor:- `crontab -e` <br/>
+  Add this to your crontab :-`* * * * * bash /home/centos/dev/jarvis_data_eng_Shubhkarman/ linux_sql/scripts/host_usage.sh "localhost" 5432 "host_agent" "postgres" "password" > /tmp/psl_docker.log` <br/>
 
 ### queries.sql
 - Discription
