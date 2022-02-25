@@ -58,7 +58,7 @@ public class JavaGrepImp implements JavaGrep {
     }
     catch(IOException ex){
 
-      logger.error("Error file reading",ex);
+      //logger.error("Error file reading",ex);
     }
     return lines;
 
@@ -128,7 +128,7 @@ public class JavaGrepImp implements JavaGrep {
       jGrepImp.process();
     }catch(Exception ex){
 
-       jGrepImp.logger.error("Error: Unable to process",ex);
+       //jGrepImp.logger.error("Error: Unable to process",ex);
     }
   }
 }
