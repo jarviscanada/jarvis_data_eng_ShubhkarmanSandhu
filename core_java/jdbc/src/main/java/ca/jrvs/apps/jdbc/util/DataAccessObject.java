@@ -30,8 +30,7 @@ public abstract class DataAccessObject <T extends DataTransferObject> {
       }
       return key;
     }catch (SQLException e ){
-      e.printStackTrace();
-      throw new RuntimeException(e);
+      throw new RuntimeException("Error in DataAccessObject:",e);
     }
   }
 }
