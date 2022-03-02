@@ -11,10 +11,10 @@ The driver (in this case DatabaseConnectionManager class) creates and handles th
 
 DAO is a class that usually has the CRUD operations like INSERT, SELECT, UPDATE, and DELETE. In this project, we have two DAO classes customerDAO and orderDAO which handle CRUD operation of customer info and order info respectively.
 
-DTO is just an object that holds data which either received from the database or has to be inserted into the database. In this project, we have three classes for the creation of DTO:-
-Customer:-representing Customer entity.
-Order:-representing Order entity.
-OrderLine:-representing OrderLine entity.
+DTO is just an object that holds data which either received from the database or has to be inserted into the database. In this project, we have three classes for the creation of following DTO:-<br>
+Customer:-representing Customer entity.<br>
+Order:-representing Order entity.<br>
+OrderLine:-representing OrderLine entity.<br>
 
 In nutshell, the driver class creates and maintains the connection between the database and java, and then java creates and accesses a pre-defined DAO method to execute a query. These queries (if they return tables) will return a resultset object, where the DAOs will convert into DTOs. These DTOs can then be accessed and used as common  java objects
 ### Repository design pattern
