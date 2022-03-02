@@ -1,5 +1,7 @@
 # Introduction
 This is a practice project to gain experience and knowledge of the java database connections API  between java and PostgreSQL. A PostgreSQL database HPlusSports is set up to track orders and related information. The connection is made using JDBC implementations of DAO and DTO, which we use to query tables with SQL script and obtain readable data.
+Technologies used:- Java 1.8, Postgresql, Dbeaver, Maven, Docker, Git, IntelliJ IDE, SQL queries 
+
 # Implementaiton
 ## ER Diagram
 ![](jdbc.jpg)
