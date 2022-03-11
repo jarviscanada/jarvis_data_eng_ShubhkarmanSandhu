@@ -33,6 +33,7 @@ public class FindMissing {
     }
 
     public static void main(String[] args) {
-        FindMissing findMissing=new FindMissing(8);
+
+
     }
 }
