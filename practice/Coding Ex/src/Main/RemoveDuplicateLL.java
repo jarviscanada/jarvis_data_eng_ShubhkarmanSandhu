@@ -12,10 +12,10 @@ public class RemoveDuplicateLL {
         Set<Integer> set=new HashSet<>();
 
         while(head!=null){
-            System.out.println(head.val);
+
             if(set.contains(head.val))
             {
-                System.out.println("found");
+
                 prev.next=head.next;
             }
             else{
