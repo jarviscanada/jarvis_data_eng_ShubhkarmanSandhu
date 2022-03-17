@@ -8,7 +8,7 @@ I am a Bachelor of Computer Science graduate from Lassonde School of Engineering
 
 **Competent:** React, JavaScript, Visual Studio Code, Eclipse, Docker
 
-**Familiar:** C/C++, Node.js, React-native, IntelliJ IDEA, Google Cloud Platform
+**Familiar:** JDBC, Node.js, React-native, IntelliJ IDEA,Maven
 
 ## Jarvis Projects
 
@@ -19,10 +19,11 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_Shubhkarma
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShubhkarmanSandhu/tree/master/core_java)]:
       
-  - Twitter App: In progress
-  - JDBC App: In progress
-  - Grep App: In progress.
-
+  - **Twitter App**: In progress
+  - **JDBC App**: Practice project to gain experience and knowledge of the java database connections API between java and PostgreSQL.The connection is DAO pattern based,the driver class creates and handles the connection to the database itself,two DAO classes has been developed for CRUD operations like INSERT, SELECT, UPDATE, and DELETE.
+    <br>Technologies used:- Java 1.8, Postgresql, Dbeaver, Maven, Docker, Git, IntelliJ IDE, SQL queries
+  - **Grep App**: Java grep is an app that impersonates the functionality of the grep bash command of Linux(Match pattern in files in a given directory). App accepts a directory path, then reads all files and match a given pattern in the each file line by line.Docker container is also created and uploaded to use the app ,along with Fat-jar execution file. 
+    <br>Technologies used:- Java 1.8, Maven, Docker, Git, IntelliJ IDE
 
 ## Highlighted Projects
 **	React Portfolio** [[GitHub](https://github.com/LordSandhu/Portfolio)]: Personal portfolio developed with react framework and published using vercelcloud computing and GitHub pages.
