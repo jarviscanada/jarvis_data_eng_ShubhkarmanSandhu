@@ -1,6 +1,6 @@
 # Shubhkarman Singh Sandhu . Jarvis Consulting
 
-I am a Bachelor of Computer Science graduate from Lassonde School of Engineering, York University. I came to york through an articulation program from Chitkara University, India. , I worked as a trainee at Aavenir Inc, primarily focused on Front-end Development. Before York, I worked as a trainee at Aavenir Inc, primarily focused on Front-end Development.  I got this opportunity by winning a website-making Hackathon at my old School, Chitkara University. I gained solid programming, UI/UX, and designing skills while working there. Currently, I am a Junior Software Developer at Jarvis.I am especially passionate about using technical skills to solve problems for a wide variety of stakeholders.
+I am a Bachelor of Computer Science graduate from Lassonde School of Engineering, York University. I came to york through an articulation program from Chitkara University, India. Before York, I worked as a trainee at Aavenir Inc, primarily focused on Front-end Development.  I got this opportunity by winning a website-making Hackathon at my old School, Chitkara University. I gained solid programming, UI/UX, and designing skills while working there. Currently, I am a Junior Software Developer at Jarvis.I am especially passionate about using technical skills to solve problems for a wide variety of stakeholders.
 
 ## Skills
 
