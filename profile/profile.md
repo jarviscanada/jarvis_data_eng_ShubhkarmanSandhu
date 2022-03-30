@@ -18,10 +18,10 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_Shubhkarma
 **Linux Cluster Monitoring Agent** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShubhkarmanSandhu/tree/master/linux_sql)]: Linux Cluster Monitoring Agent is a tool that will allow users to collect, monitor, compare and generate reports of system hardware specifications and performance for a group of Linux systems on a server. Programmed with bash scripts and automated with crontab for data collection and stored into a Dockerized a PostgreSQL database. Collected data can be returned as a result set by using SQL queries, including detecting crontab insertion failure using SQL aggregate functions to compare the number of entries within a minute. This app was developed and run within a CentOS 7 environment using Docker.
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ShubhkarmanSandhu/tree/master/core_java)]:
-
-- Twitter App: A Java-based Twitter Rest API app that helps the user to Publish, Read and Delete tweets on Twitter from CLI. TwitterApp is designed with the MVC architecture(design pattern) with a four-layer structure (Model, Controller, Service, Data Access Layer).
-- JDBC App: Team project to deliver a app based on Java database connections API between Java and PostgreSQL.The connection is DAO pattern based,the driver class creates and handles the connection to the database itself,two DAO classes has been developed for CRUD operations like INSERT, SELECT, UPDATE, and DELETE. Technologies used:- Java 1.8, Postgresql, Dbeaver, Maven, Docker, Git, IntelliJ IDE, SQL queries
-- Grep App: Java grep is an app that impersonates the functionality of the grep bash command of Linux (which matches a pattern in files in a given directory). App accepts a directory path, then reads all files and matches a given pattern in each file line by line. Docker container is also created and uploaded to use the app, along with the Fat-jar execution file. Technologies used:- Java 1.8, Maven, Docker, Git, IntelliJ IDE
+      
+  - Twitter App: A Java-based Twitter Rest API app that helps the user to Publish, Read and Delete tweets on Twitter from CLI. TwitterApp is designed with the MVC architecture(design pattern) with a four-layer structure (Model, Controller, Service, Data Access Layer).
+  - JDBC App: Team project to deliver a app based on Java database connections API between Java and PostgreSQL.The connection is DAO pattern based,the driver class creates and handles the connection to the database itself,two DAO classes has been developed for CRUD operations like INSERT, SELECT, UPDATE, and DELETE. Technologies used:- Java 1.8, Postgresql, Dbeaver, Maven, Docker, Git, IntelliJ IDE, SQL queries
+  - Grep App: Java grep is an app that impersonates the functionality of the grep bash command of Linux (which matches a pattern in files in a given directory). App accepts a directory path, then reads all files and matches a given pattern in each file line by line. Docker container is also created and uploaded to use the app, along with the Fat-jar execution file. Technologies used:- Java 1.8, Maven, Docker, Git, IntelliJ IDE
 
 
 ## Highlighted Projects
@@ -34,7 +34,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_Shubhkarma
 
 **Software Developer, Jarvis (2022-present)**: Developed various applications using an Agile methodology. Acted as a team lead in organizing and leading daily scrum meetings with the team. Java, Linux, SQL, Docker, and bash scripts were used in developing. I also gained more experience with team collaboration and organization skills related to scrum through the use of scrum board for projects to manage my sprint backlog. Leadership was another soft skill gained from the Jarvis opportunity since every new sprint allows a developer to take on the role of team lead and direct the group in scrum meetings. My ability to problem-solve has increased because of the challenges and questions posed by the assignments to ensure that I understand the technical aspects of the projects being developed and can relate the concepts to my prior knowledge.
 
-**Front End Developer, Aavenir (India (2018-2019))**: Implemented websites, mobile applications, and landing pages from concept through deployment,standardized all output with a new, responsive, mobile-first approach and strategy,accessed UX and UI designs for technical feasibility.
+**Front End Developer, Aavenir (India (2018-2019))**: Implemented websites, mobile applications, and landing pages from concept through deployment,standardized all output with a new, responsive, mobile-first approach and strategy,accessed UX and UI designs for technical feasibility. 
 
 
 ## Education
