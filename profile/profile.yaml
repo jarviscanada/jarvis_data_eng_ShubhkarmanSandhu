@@ -5,8 +5,7 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_Shubhkarma
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: I am a Bachelor of Computer Science graduate from Lassonde School of Engineering, York University. I came to york through an articulation program from Chitkara University, India.Before York, I worked as a trainee at Aavenir Inc, primarily focused on Front-end Development. I got this opportunity by winning a website-making Hackathon at my old School, Chitkara University. I gained solid programming, UI/UX, and designing skills while working there. Currently, I am a Junior Software Developer at Jarvis.I am especially passionate about using technical skills to solve problems for a wide variety of stakeholders.
-
+summary: I am a Bachelor of Computer Science graduate from Lassonde School of Engineering, York University. I came to York through an articulation program from Chitkara University, India. Before York, I worked as a trainee at Aavenir Inc, primarily focused on Front-end Development. I got this opportunity by winning a website-making Hackathon at my old School, Chitkara University. I gained solid programming, UI/UX, and designing skills while working there. Currently, I am working as a junior software developer at Jarvis, where I develop Java-based back-end apps. I am especially passionate about using technical skills to solve problems for a wide variety of stakeholders.
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
@@ -21,16 +20,16 @@ skills:
   competent:
     - React
     - JavaScript
+    - Docker
     - Visual Studio Code
     - Eclipse
-    - Docker
   # At least 5 skills
   familiar:
     - JDBC
     - Node.js
+    - Maven
     - React-Native
     - IntelliJ IDEA
-    - Maven
 
 # List of Jarvis projects
 jarvis_projects:
@@ -38,21 +37,15 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Linux Cluster Monitoring Agent is a tool that will allow users to collect, monitor, compare and generate reports of system hardware specifications and performance for a group of Linux systems on a server. Programmed with bash scripts and automated with crontab for data collection and stored into a PostgreSQL database hosted by Docker. Collected data can be returned as a result set by using SQL queries, including detecting crontab insertion failure using SQL aggregate functions to compare the number of entries within a minute. This app was developed and run within a CentOS 7 environment using Docker.
+    description: Linux Cluster Monitoring Agent is a tool that will allow users to collect, monitor, compare and generate reports of system hardware specifications and performance for a group of Linux systems on a server. Programmed with bash scripts and automated with crontab for data collection and stored into a Dockerized a PostgreSQL database. Collected data can be returned as a result set by using SQL queries, including detecting crontab insertion failure using SQL aggregate functions to compare the number of entries within a minute. This app was developed and run within a CentOS 7 environment using Docker.
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-      - "Twitter App: In progress"
-      - "JDBC App: Team project to deliver a app based on java database connections API between java and PostgreSQL.The connection is DAO pattern based,the driver class creates and handles the connection to the database itself,two DAO classes has been developed for CRUD operations like INSERT, SELECT, UPDATE, and DELETE.
+      - "Twitter App: A Java-based Twitter Rest API app that helps the user to Publish, Read and Delete tweets on Twitter from CLI. TwitterApp is designed with the MVC architecture(design pattern) with a four-layer structure (Model, Controller, Service, Data Access Layer)."
+      - "JDBC App: Team project to deliver a app based on Java database connections API between Java and PostgreSQL.The connection is DAO pattern based,the driver class creates and handles the connection to the database itself,two DAO classes has been developed for CRUD operations like INSERT, SELECT, UPDATE, and DELETE.
         Technologies used:- Java 1.8, Postgresql, Dbeaver, Maven, Docker, Git, IntelliJ IDE, SQL queries"
-      - "Grep App: Java grep is an app that impersonates the functionality of the grep bash command of Linux(Match pattern in files in a given directory). App accepts a directory path, then reads all files and match a given pattern in the each file line by line.Docker container is also created and uploaded to use the app ,along with Fat-jar execution file.
+      - "Grep App: Java grep is an app that impersonates the functionality of the grep bash command of Linux (which matches a pattern in files in a given directory). App accepts a directory path, then reads all files and matches a given pattern in each file line by line. Docker container is also created and uploaded to use the app, along with the Fat-jar execution file.
         Technologies used:- Java 1.8, Maven, Docker, Git, IntelliJ IDE"
-  - name: "Springboot App"
-    git_url: "/springboot"
-    description: "In progress"
-  - name: "Cloud/DevOps"
-    git_url: "/cloud_devops"
-    description: "In progress"
 
 # List of personal or academic projects
 # Feel free to add more projects
@@ -62,7 +55,7 @@ highlighted_projects:
     #URL is optional
     git_url: "https://github.com/LordSandhu/Portfolio"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Personal portfolio developed with react framework and published using vercelcloud computing and GitHub pages.
+    description: Personal portfolio developed with React framework and published using vercelcloud computing and GitHub pages.
   - name: "Software Design Project"
     git_url: "https://github.com/LordSandhu/ParkingTicket-Project-Java"
     description: Parking ticket system for Toronto using Java as backend with Java-GUI as graphic interface. State Design Pattern implemented with UML diagrams in agile environment and dual programming.
@@ -107,11 +100,11 @@ others:
   - title: "Certificates"
     #list of items
     bullets:
-      - "The Ultimate React Native Series: Fundamentals"
-      - "Mastering React"
+      - "The Ultimate React Native Series: Fundamentals Course"
+      - "Mastering React Course"
       - "The Complete Node.js Course"
   - title: "Activities/Hobbies"
     bullets:
       - "Watching sports:- Cricket,Football"
       - "Casual Gamer"
-      - "Historic and Fantasy Movies and TV hows"
+      - "Historic and Fantasy Movies and TV shows"

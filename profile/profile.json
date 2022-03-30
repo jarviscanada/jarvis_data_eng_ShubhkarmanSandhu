@@ -25,7 +25,7 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_ShubhkarmanSandhu",
   "highlighted_projects": [
     {
-      "description": "Personal portfolio developed with react framework and published using vercelcloud computing and GitHub pages.",
+      "description": "Personal portfolio developed with React framework and published using vercelcloud computing and GitHub pages.",
       "git_url": "https://github.com/LordSandhu/Portfolio",
       "name": "React Portfolio"
     },
@@ -37,36 +37,26 @@
   ],
   "jarvis_projects": [
     {
-      "description": "Linux Cluster Monitoring Agent is a tool that will allow users to collect, monitor, compare and generate reports of system hardware specifications and performance for a group of Linux systems on a server. Programmed with bash scripts and automated with crontab for data collection and stored into a PostgreSQL database hosted by Docker. Collected data can be returned as a result set by using SQL queries, including detecting crontab insertion failure using SQL aggregate functions to compare the number of entries within a minute. This app was developed and run within a CentOS 7 environment using Docker.",
+      "description": "Linux Cluster Monitoring Agent is a tool that will allow users to collect, monitor, compare and generate reports of system hardware specifications and performance for a group of Linux systems on a server. Programmed with bash scripts and automated with crontab for data collection and stored into a Dockerized a PostgreSQL database. Collected data can be returned as a result set by using SQL queries, including detecting crontab insertion failure using SQL aggregate functions to compare the number of entries within a minute. This app was developed and run within a CentOS 7 environment using Docker.",
       "git_url": "/linux_sql",
       "name": "Linux Cluster Monitoring Agent"
     },
     {
       "description": [
-        "Twitter App: In progress",
-        "JDBC App: Team project to deliver a app based on java database connections API between java and PostgreSQL.The connection is DAO pattern based,the driver class creates and handles the connection to the database itself,two DAO classes has been developed for CRUD operations like INSERT, SELECT, UPDATE, and DELETE. Technologies used:- Java 1.8, Postgresql, Dbeaver, Maven, Docker, Git, IntelliJ IDE, SQL queries",
-        "Grep App: Java grep is an app that impersonates the functionality of the grep bash command of Linux(Match pattern in files in a given directory). App accepts a directory path, then reads all files and match a given pattern in the each file line by line.Docker container is also created and uploaded to use the app ,along with Fat-jar execution file. Technologies used:- Java 1.8, Maven, Docker, Git, IntelliJ IDE"
+        "Twitter App: A Java-based Twitter Rest API app that helps the user to Publish, Read and Delete tweets on Twitter from CLI. TwitterApp is designed with the MVC architecture(design pattern) with a four-layer structure (Model, Controller, Service, Data Access Layer).",
+        "JDBC App: Team project to deliver a app based on Java database connections API between Java and PostgreSQL.The connection is DAO pattern based,the driver class creates and handles the connection to the database itself,two DAO classes has been developed for CRUD operations like INSERT, SELECT, UPDATE, and DELETE. Technologies used:- Java 1.8, Postgresql, Dbeaver, Maven, Docker, Git, IntelliJ IDE, SQL queries",
+        "Grep App: Java grep is an app that impersonates the functionality of the grep bash command of Linux (which matches a pattern in files in a given directory). App accepts a directory path, then reads all files and matches a given pattern in each file line by line. Docker container is also created and uploaded to use the app, along with the Fat-jar execution file. Technologies used:- Java 1.8, Maven, Docker, Git, IntelliJ IDE"
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
-    },
-    {
-      "description": "In progress",
-      "git_url": "/springboot",
-      "name": "Springboot App"
-    },
-    {
-      "description": "In progress",
-      "git_url": "/cloud_devops",
-      "name": "Cloud/DevOps"
     }
   ],
   "name": "Shubhkarman Singh Sandhu",
   "others": [
     {
       "bullets": [
-        "The Ultimate React Native Series: Fundamentals",
-        "Mastering React",
+        "The Ultimate React Native Series: Fundamentals Course",
+        "Mastering React Course",
         "The Complete Node.js Course"
       ],
       "title": "Certificates"
@@ -75,7 +65,7 @@
       "bullets": [
         "Watching sports:- Cricket,Football",
         "Casual Gamer",
-        "Historic and Fantasy Movies and TV hows"
+        "Historic and Fantasy Movies and TV shows"
       ],
       "title": "Activities/Hobbies"
     }
@@ -98,16 +88,16 @@
     "competent": [
       "React",
       "JavaScript",
+      "Docker",
       "Visual Studio Code",
-      "Eclipse",
-      "Docker"
+      "Eclipse"
     ],
     "familiar": [
       "JDBC",
       "Node.js",
+      "Maven",
       "React-Native",
-      "IntelliJ IDEA",
-      "Maven"
+      "IntelliJ IDEA"
     ],
     "proficient": [
       "Java",
@@ -117,5 +107,5 @@
       "Git"
     ]
   },
-  "summary": "I am a Bachelor of Computer Science graduate from Lassonde School of Engineering, York University. I came to york through an articulation program from Chitkara University, India.Before York, I worked as a trainee at Aavenir Inc, primarily focused on Front-end Development. I got this opportunity by winning a website-making Hackathon at my old School, Chitkara University. I gained solid programming, UI/UX, and designing skills while working there. Currently, I am a Junior Software Developer at Jarvis.I am especially passionate about using technical skills to solve problems for a wide variety of stakeholders."
+  "summary": "I am a Bachelor of Computer Science graduate from Lassonde School of Engineering, York University. I came to York through an articulation program from Chitkara University, India. Before York, I worked as a trainee at Aavenir Inc, primarily focused on Front-end Development. I got this opportunity by winning a website-making Hackathon at my old School, Chitkara University. I gained solid programming, UI/UX, and designing skills while working there. Currently, I am working as a junior software developer at Jarvis, where I develop Java-based back-end apps. I am especially passionate about using technical skills to solve problems for a wide variety of stakeholders."
 }
