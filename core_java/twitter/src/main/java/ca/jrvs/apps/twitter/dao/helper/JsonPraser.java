@@ -1,6 +1,7 @@
-package ca.jrvs.apps.twitter.example;
+package ca.jrvs.apps.twitter.dao.helper;
 
 import ca.jrvs.apps.twitter.example.DTO.Company;
+import ca.jrvs.apps.twitter.model.Tweet;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -9,25 +10,24 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import java.io.IOException;
 
 public class JsonPraser {
-    public static String toJson(Object object,boolean prettyJson, boolean includeNullValues)throws JsonProcessingException {
+    public static String toJson(Tweet object)throws JsonProcessingException {
         ObjectMapper m= new ObjectMapper();
-        if(!includeNullValues){
-            m.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-
-        }
-        if(prettyJson){
-            m.enable(SerializationFeature.INDENT_OUTPUT);
-        }
+        m.enable(SerializationFeature.INDENT_OUTPUT);
+        m.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         return m.writeValueAsString(object);
 
     }
-    public static <T> T toObjectFromJson(String json,Class clazz) throws IOException {
+    public static Tweet toObjectFromJson(String json,Class clazz) throws IOException {
         ObjectMapper m= new ObjectMapper();
-        return (T)m.readValue(json,clazz);
+        return (Tweet)m.readValue(json,Tweet.class);
 
     }
-
+    /**
+     * Main for testing
+     */
+    /*
     public static void main(String[] args) throws IOException{
+
         Company company=toObjectFromJson(companyStr,Company.class);
         //System.out.println(company.getDescription());
         System.out.println(toJson(company,true,false));
@@ -78,4 +78,6 @@ public class JsonPraser {
             + "      }\n"
             + "   ]\n"
             + "}";
+
+     */
 }
