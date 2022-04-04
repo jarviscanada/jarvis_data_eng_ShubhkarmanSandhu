@@ -118,7 +118,21 @@ public class Tweet {
         return favorited;
     }
 
-
+    @Override
+    public String toString() {
+        return "Tweet{" +
+                "created_at='" + created_at + '\'' +
+                ", id=" + id +
+                ", id_str='" + id_str + '\'' +
+                ", text='" + text + '\'' +
+                ", entities=" + entities +
+                ", coordinates=" + coordinates +
+                ", retweet_count=" + retweet_count +
+                ", favorite_count=" + favorite_count +
+                ", favorited=" + favorited +
+                ", retweeted=" + retweeted +
+                '}';
+    }
 
     public void setFavorited(boolean favorited) {
         this.favorited = favorited;

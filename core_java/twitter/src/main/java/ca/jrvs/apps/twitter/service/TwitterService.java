@@ -3,8 +3,10 @@ package ca.jrvs.apps.twitter.service;
 import ca.jrvs.apps.twitter.dao.TwitterDao;
 import ca.jrvs.apps.twitter.model.Tweet;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.*;
 
 public class TwitterService implements Service{
     private TwitterDao dao;
@@ -23,6 +25,34 @@ public class TwitterService implements Service{
     public Tweet showTweet(String id, String[] fields) {
         validateID(id);
         Tweet response= dao.findById(id);
+        if(fields!=null)
+        response=filterTweet(response,fields);
+        return response;
+    }
+
+    private Tweet filterTweet(Tweet response, String[] fields) {
+        Class tweetClass = Tweet.class;
+        Field f[] = tweetClass.getDeclaredFields();
+        HashSet<String> toSet=new HashSet<String>();
+        Collections.addAll(toSet,fields);
+
+        try{
+            for(Field field:f){
+                if (toSet.contains(field.getName())) {
+
+                char[] getAccess = field.getName().toCharArray();
+                getAccess[0] = Character.toUpperCase(getAccess[0]);
+                String setMethodName = "set" + String.valueOf(getAccess);
+
+                Method method = tweetClass.getDeclaredMethod(setMethodName,new Class[]{field.getType()});
+                Object obj=null;
+                method.invoke(response,obj);
+                }
+            }
+           }
+        catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            throw new IllegalArgumentException("Invalid Field to null", e);
+        }
         return response;
     }
 
