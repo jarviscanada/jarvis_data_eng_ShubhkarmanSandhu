@@ -74,11 +74,11 @@ public class Tweet {
         this.text = text;
     }
 
-    public Entites getEntites() {
+    public Entites getEntities() {
         return entities;
     }
 
-    public void setEntites(Entites entites) {
+    public void setEntities(Entites entites) {
         this.entities = entites;
     }
 

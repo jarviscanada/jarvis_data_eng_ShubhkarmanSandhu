@@ -2,6 +2,7 @@ package ca.jrvs.apps.twitter.service;
 
 import ca.jrvs.apps.twitter.dao.TwitterDao;
 import ca.jrvs.apps.twitter.model.Tweet;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -11,6 +12,7 @@ import java.util.*;
 public class TwitterService implements Service{
     private TwitterDao dao;
 
+    @Autowired
     public TwitterService(TwitterDao dao) {
         this.dao = dao;
     }
@@ -25,8 +27,10 @@ public class TwitterService implements Service{
     public Tweet showTweet(String id, String[] fields) {
         validateID(id);
         Tweet response= dao.findById(id);
+
         if(fields!=null)
         response=filterTweet(response,fields);
+
         return response;
     }
 
@@ -43,7 +47,6 @@ public class TwitterService implements Service{
                 char[] getAccess = field.getName().toCharArray();
                 getAccess[0] = Character.toUpperCase(getAccess[0]);
                 String setMethodName = "set" + String.valueOf(getAccess);
-
                 Method method = tweetClass.getDeclaredMethod(setMethodName,new Class[]{field.getType()});
                 Object obj=null;
                 method.invoke(response,obj);
@@ -51,7 +54,7 @@ public class TwitterService implements Service{
             }
            }
         catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-            throw new IllegalArgumentException("Invalid Field to null", e);
+            throw new IllegalArgumentException("Invalid Field at Filtering", e);
         }
         return response;
     }

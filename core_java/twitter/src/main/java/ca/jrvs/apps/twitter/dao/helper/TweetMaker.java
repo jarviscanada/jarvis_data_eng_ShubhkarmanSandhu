@@ -23,7 +23,7 @@ public class TweetMaker {
         Tweet tweet = new Tweet();
         tweet.setText(text);
         tweet.setCoordinates(coordinates);
-        tweet.setEntites(entities);
+        tweet.setEntities(entities);
         tweet.setRetweet_count(0);
         tweet.setRetweet_count(0);
         tweet.setFavorited(false);
