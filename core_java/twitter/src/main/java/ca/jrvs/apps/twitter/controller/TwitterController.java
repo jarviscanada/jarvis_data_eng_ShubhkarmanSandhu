@@ -4,10 +4,10 @@ import ca.jrvs.apps.twitter.dao.helper.TweetMaker;
 import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.Arrays;
 import java.util.List;
 
+@org.springframework.stereotype.Controller
 public class TwitterController implements Controller{
     private static final String COORD_SEP=":";
     private static final String COMMA=",";

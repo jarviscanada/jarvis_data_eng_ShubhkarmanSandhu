@@ -6,6 +6,7 @@ import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.service.Service;
 import ca.jrvs.apps.twitter.service.TwitterService;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -15,9 +16,9 @@ import static org.junit.Assert.*;
 
 public class TwitterControllerIntTest {
 
-    TwitterController twitterController;
-    @Before
-    public void setUp() throws Exception {
+    static TwitterController twitterController;
+    @BeforeClass
+    public static void setUp() throws Exception {
         String CONSUMER_KEY = System.getenv("consumerKey");
         String CONSUMER_SECRET = System.getenv("consumerSecret");
         String ACCESS_TOKEN = System.getenv("accessToken");
@@ -68,7 +69,7 @@ public class TwitterControllerIntTest {
 
         String argsGetWithFields[]=new String[]{"get", postTweet.getId_str(),"text"};
         getTweet= twitterController.showTweet(argsGetWithFields);
-        assertNull(getTweet.getText());
+        assertEquals(getTweet.getText(),text);
     }
 
     @Test

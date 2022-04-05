@@ -6,15 +6,16 @@ import ca.jrvs.apps.twitter.dao.helper.TwitterHttpHelper;
 import ca.jrvs.apps.twitter.model.Tweet;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class TwitterDaoIntTest {
 
-    private TwitterDao dao;
-    @Before
-    public void setUp() throws Exception {
+    private static TwitterDao dao;
+    @BeforeClass
+    public static void setUp() throws Exception {
 
         String CONSUMER_KEY = System.getenv("consumerKey");
         String CONSUMER_SECRET = System.getenv("consumerSecret");
@@ -27,7 +28,7 @@ public class TwitterDaoIntTest {
         System.out.println("TOKEN_SECRET: "+TOKEN_SECRET);
 
         TwitterHttpHelper helper=new TwitterHttpHelper(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_TOKEN,TOKEN_SECRET);
-        this.dao=new TwitterDao(helper);
+        dao=new TwitterDao(helper);
     }
 
     @Test

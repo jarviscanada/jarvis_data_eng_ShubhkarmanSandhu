@@ -54,7 +54,7 @@ public class Tweet {
         return this.id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -94,7 +94,7 @@ public class Tweet {
         return retweet_count;
     }
 
-    public void setRetweet_count(int retweet_count) {
+    public void setRetweet_count(Integer retweet_count) {
         this.retweet_count = retweet_count;
     }
 
@@ -102,7 +102,7 @@ public class Tweet {
         return favorite_count;
     }
 
-    public void setFavorite_count(int favorite_count) {
+    public void setFavorite_count(Integer favorite_count) {
         this.favorite_count = favorite_count;
     }
 
@@ -110,8 +110,20 @@ public class Tweet {
         return retweeted;
     }
 
-    public void setRetweeted(boolean retweeted) {
+    public void setRetweeted(Boolean retweeted) {
         this.retweeted = retweeted;
+    }
+
+    public Boolean getFavorited() {
+        return favorited;
+    }
+
+    public void setFavorited(Boolean favorited) {
+        this.favorited = favorited;
+    }
+
+    public Boolean getRetweeted() {
+        return retweeted;
     }
 
     public Boolean isFavorited() {

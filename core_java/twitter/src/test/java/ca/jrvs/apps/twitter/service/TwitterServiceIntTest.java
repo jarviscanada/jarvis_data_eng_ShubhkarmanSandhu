@@ -5,6 +5,7 @@ import ca.jrvs.apps.twitter.dao.helper.TweetMaker;
 import ca.jrvs.apps.twitter.dao.helper.TwitterHttpHelper;
 import ca.jrvs.apps.twitter.model.Tweet;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.List;
@@ -13,10 +14,10 @@ import static org.junit.Assert.*;
 
 public class TwitterServiceIntTest {
 
-    TwitterService service;
+    static  TwitterService service;
 
-    @Before
-    public void setUp() throws Exception {
+    @BeforeClass
+    public static void setUp() throws Exception {
         String CONSUMER_KEY = System.getenv("consumerKey");
         String CONSUMER_SECRET = System.getenv("consumerSecret");
         String ACCESS_TOKEN = System.getenv("accessToken");
@@ -53,7 +54,7 @@ public class TwitterServiceIntTest {
         Tweet postTweet= TweetMaker.build(text,lon,lat);
         Tweet response=service.postTweet(postTweet);
         Tweet getTweet=service.showTweet(response.getId_str(),new String[]{"text"});
-        assertNull(getTweet.getText());
+        assertEquals(text,getTweet.getText());
 
     }
 

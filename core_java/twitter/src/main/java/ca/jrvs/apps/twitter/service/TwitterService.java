@@ -9,6 +9,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.*;
 
+@org.springframework.stereotype.Service
 public class TwitterService implements Service{
     private TwitterDao dao;
 
@@ -42,12 +43,13 @@ public class TwitterService implements Service{
 
         try{
             for(Field field:f){
-                if (toSet.contains(field.getName())) {
+                if (!toSet.contains(field.getName())) {
 
                 char[] getAccess = field.getName().toCharArray();
                 getAccess[0] = Character.toUpperCase(getAccess[0]);
                 String setMethodName = "set" + String.valueOf(getAccess);
-                Method method = tweetClass.getDeclaredMethod(setMethodName,new Class[]{field.getType()});
+                Class c=field.getType();
+                Method method = tweetClass.getDeclaredMethod(setMethodName,c);
                 Object obj=null;
                 method.invoke(response,obj);
                 }
