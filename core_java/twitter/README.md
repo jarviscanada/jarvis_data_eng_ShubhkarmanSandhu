@@ -57,8 +57,6 @@ Technologies used in the project: REST API, Java, Spring Framework, DockerJUnit,
 
 # Design
 
-## UML diagram
-
 ![](Twitter.jpg)
 
 ## Components
