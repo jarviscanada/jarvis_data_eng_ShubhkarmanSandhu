@@ -57,7 +57,7 @@ Technologies used in the project: REST API, Java, Spring Framework, DockerJUnit,
 
 # Design
 
-![](Twitter.jpg)
+![](image.jpg)
 
 ## Components
 
