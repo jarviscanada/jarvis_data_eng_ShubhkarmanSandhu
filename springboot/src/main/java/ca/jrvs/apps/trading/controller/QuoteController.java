@@ -30,4 +30,16 @@ import org.springframework.web.bind.annotation.*;
             throw ResponseExceptionUtil.getResponseStatusException(e);
         }
     }
+    //@ApiOperation(value = "Update quote table using iex data", notes = "Update all quotes in the quote table. Use IEX trading API as market data source.")
+    @PutMapping(path = "/iexMarketData")
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public void updateMarketData() {
+        try {
+            quoteService.updateMarketData();
+        } catch (Exception e) {
+            throw ResponseExceptionUtil.getResponseStatusException(e);
+        }
+    }
+
 }
