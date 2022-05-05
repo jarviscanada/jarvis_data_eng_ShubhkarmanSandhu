@@ -1,0 +1,4 @@
+ca\jrvs\apps\trading\service\QuoteServiceIntTest.class
+ca\jrvs\apps\trading\dao\MarketDataDaoIntTest.class
+ca\jrvs\apps\trading\TestConfig.class
+ca\jrvs\apps\trading\dao\QuoteDaoIntTest.class
