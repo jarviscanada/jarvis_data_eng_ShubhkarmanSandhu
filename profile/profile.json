@@ -78,6 +78,12 @@
       "title": "Software Developer"
     },
     {
+      "company": "CIBC",
+      "description": "Developed SQL Scripts and queries for bug fixes and testing for regular Jiras (bugs and errors) and performed an in-depth analysis of errors and issues and gave consultancy support to other developers. Helped AML development team at Cibc in updating the legacy system into Act-One(newer system) in an agile environment and also, worked on the ETL side of production to make sure data is transferred from all the sources to correct channels in Newer System.",
+      "duration": "April 2022 -July 2022",
+      "title": "Application Developer"
+    },
+    {
       "company": "Aavenir",
       "description": "Implemented websites, mobile applications, and landing pages from concept through deployment,standardized all output with a new, responsive, mobile-first approach and strategy,accessed UX and UI designs for technical feasibility. ",
       "duration": "India (2018-2019)",
