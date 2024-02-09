@@ -4,9 +4,9 @@ I am a Bachelor of Computer Science graduate from Lassonde School of Engineering
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Python, RDBMS/SQL, Java, Linux/Bash,  Agile/Scrum, Git
 
-**Competent:** React, JavaScript, Docker, Visual Studio Code, Eclipse
+**Competent:** React, JavaScript, Elastic Search, Kibana, Confluence 
 
 **Familiar:** JDBC, Node.js, Maven, React-Native, IntelliJ IDEA
 
@@ -33,6 +33,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_Shubhkarma
 ## Professional Experiences
 
 **Software Developer, Jarvis (2022-present)**: Developed various applications using an Agile methodology. Acted as a team lead in organizing and leading daily scrum meetings with the team. Java, Linux, SQL, Docker, and bash scripts were used in developing. I also gained more experience with team collaboration and organization skills related to scrum through the use of scrum board for projects to manage my sprint backlog. Leadership was another soft skill gained from the Jarvis opportunity since every new sprint allows a developer to take on the role of team lead and direct the group in scrum meetings. My ability to problem-solve has increased because of the challenges and questions posed by the assignments to ensure that I understand the technical aspects of the projects being developed and can relate the concepts to my prior knowledge.
+
+**Application Developer, RBC (Aug 2022 - Feb 2023)**: Developed and implemented various projects including Client Master, Security Master, and Arise, employing Python, SQL, Elasticsearch, and Kibana dashboards.Conducted data analysis and enforced data governance protocols to ensure data accuracy, integrity, consistency, and timeliness.Utilized Excel and Confluence for project management, documentation, and collaboration purposes. Actively participated in Scrum meetings and contributed to an agile environment to ensure efficient project delivery and adaptability to changing requirements.
 
 **Application Developer, CIBC (April 2022 -July 2022)**: Developed SQL Scripts and queries for bug fixes and testing for regular Jiras (bugs and errors) and performed an in-depth analysis of errors and issues and gave consultancy support to other developers. Helped AML development team at Cibc in updating the legacy system into Act-One(newer system) in an agile environment and also, worked on the ETL side of production to make sure data is transferred from all the sources to correct channels in Newer System.
 
